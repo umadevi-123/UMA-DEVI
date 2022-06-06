@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-links {
+    font-size: 40px;
+    padding: 50px;
+}
+
+.logo img {
+    width: 110px;
+    height: 122px;
+    top: 20px;
+    left: 40px;
+    position: absolute;
+}
+
+.logo p {
+    font-size: 25px;
+    padding-left: 160px;
+}
+
+.menu-bar {
+    text-align: center;
+}
+
+ul {
+    color: #d7cec7;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    background-color: green;
+    color: #d7cec7;
+    padding: 10px 50px;
+    font-size: 15px;
+}
+
+ul li:hover {
+    background-color: #d7cec7;
+    color: green;
+    border: green;
+}
+
+.sub-menu1 {
+    display: none;
+}
+
+ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color: #d7cec7;
+}
+
+ul li:hover .sub-menu1 ul {
+    color: green;
+}
+
+ul li:hover .sub-menu1 ul li {
+    display: block;
+    margin-top: -20px;
+    margin: 3px;
+    width: 150px;
+    padding: 3px;
+    border-bottom: 1px dotted green;
+}
+
+ul li:hover .sub-menu1 ul li:last-child {
+    border-bottom: none;
+}
+
+ul li:hover .sub-menu1 ul li a {
+    font-size: 10px;
+    background-color: #d7cec7;
+    color: green;
+    padding: 2px 2px;
+}
+
+.sub-menu2 {
+    display: none;
+}
+
+ul li:hover .sub-menu2 ul li {
+    width: 260px;
+}
+
+.hower-me:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-top: -20px;
+    margin-left: 150px;
+    background-color: #d7cec7;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.image {
+    padding: 50px 100px;
+}
+
+.gplogin {
+    border-radius: 25px;
+    width: 360px;
+    height: 590px;
+    background-color: #d7cec7;
+    color: green;
+    top: 81%;
+    left: 81%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 130px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.gplogin p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.gplogin input {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.gplogin input[type="text"],
+input[type="password"] {
+    font-size: large;
+    border: 1px solid rgba(48, 141, 5, 0.401);
+    border-radius: 5px;
+    background-color: rgba(113, 237, 113, 0.51);
+    width: 280px;
+    height: 20px;
+}
+
+.gplogin input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #d7cec7;
+    color: green;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.gplogin input[type="date"] {
+    font-size: large;
+    border: 1px solid rgb(48, 141, 5, 0.401);
+    border-radius: 5px;
+    background-color: rgb(113, 237, 113, 0.51);
+    width: 280px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.gplogin input[type="submit"]:hover {
+    cursor: pointer;
+    background: green;
+    color: #d7cec7;
+}
+
+.hero-btn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #d7cec7;
+    color: green;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.gplogin p1 {
+    margin-bottom: 30px;
+}
+
+.hero-btn:hover {
+    cursor: pointer;
+    background: green;
+    color: #d7cec7;
+}
+
+.info {
+    display: block;
+    width: 500px;
+    height: 350px;
+    padding-left: 150px;
+}
+
+.info h1 {
+    background-color: rgb(3, 114, 162);
+    color: beige;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.info p {
+    display: block;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.info p a {
+    text-decoration: none;
+    color: rgb(68, 149, 181);
+    padding: 30px;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    margin: 0;
+}
+
+footer ul {
+    color: #d7cec7;
+    padding: 20px;
+}
+
+footer ul li {
+    display: inline-block
+}
+
+footer ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: #d7cec7;
+    font-size: 15px;
+}
+
+footer pre {
+    font-size: 15px;
+    color: #d7cec7;
+}
