@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Karantina:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="sub-header">
+            <nav>
+                <div class="home">
+                    <a href="index.html">
+                         <img class="logo" src="images/IMG_20210524_120843.jpg">
+                    </a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d949.0216764878139!2d83.42914893962492!3d17.92810940076426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDU1JzQxLjMiTiA4M8KwMjUnNDYuNyJF!5e0!3m2!1sen!2sin!4v1618550172937!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <p>It’s our pleasure to answer any inquiry you might have about Event management and experiential marketing questions, just use the form or choose one of the alternative methods of communication. </p>
+                <br/>
+                <br/>
+                <br/>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Tagarapuvalasa-Bheemli Road</h5>
+                        <p>Tagarapuvalasa,Visakhapatnam</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 9502666022</h5>
+                        <p>24 x 7 x 365 days</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>chittib584@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="contact-col">
+
+                <div class="Message-us">
+
+                    <form action="form-handler.php" method="post">
+                        <h4>Message Us</h4>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="phone" name="phone_number" placeholder="Enter your phone-number" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+       <img src="images/IMG_20210524_120843.jpg" class="logo">
+        <p>Chitti events is a leading event management company in visakhapatnam,vizianagaram managing and organising all sorts of events most efficiently within a limited time with a reasonable budget. </p>
+        <div class="icons">
+            <h4>Quick Links</h4>
+            <div class="Quick-links">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+           <a href="https://www.facebook.com/people/Chitti-Babu-Reddy/100007022113822/" target="_blank">
+            <i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/chittib584/" target="_blank">
+            <i class="fa fa-instagram"></i></a>
+        </div>
+        <p> © 2021 Copyright:UmaDevi Asinti</p>
+
+
+    </section>
+
+    <script src="js/script.js">
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        var i = 0;
+
+        function read() {
+            if (!1) {
+                document.getElementById("more").style.
+                display = "inline";
+                document.getElementById("dots").style.
+                display = "none";
+                i = 1;
+            } else {
+                document.getElementById("more").style.
+                display = "none";
+                document.getElementById("dots").style.
+                display = "inline";
+            }
+
+        }
+    </script>
+      
+</body>
+
+</html>
